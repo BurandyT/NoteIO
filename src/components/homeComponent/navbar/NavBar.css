@@ -1,0 +1,29 @@
+/* Initially hide profileSubSection */
+.profileSubSection {
+  display: none;
+}
+
+/* Show profileSubSection when hovering profileSection */
+.profileSection:hover ~.profileSubSection,.profileSubSection:hover{
+  display: flex; 
+  flex-direction: column;
+  padding-left: 10%;
+}
+
+.notebook-item {
+    position: relative;
+  }
+  
+  .notebook-item:hover .deleteButton {
+    display: block;
+  }
+  
+  .deleteButton {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
